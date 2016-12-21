@@ -3,25 +3,25 @@
     <word>
         <origin>one</origin>
         <translation>jeden</translation>
-        <part>Test</part>
-        <subpart>A</subpart>
+        <group>Test</group>
+        <subgroup>1</subgroup>
     </word>
     <word>
         <origin>two</origin>
         <translation>dwa</translation>
-        <part>Test</part>
-        <subpart>A</subpart>
+        <group>Test</group>
+        <subgroup>1</subgroup>
     </word>
     <word>
         <origin>three</origin>
         <translation>trzy</translation>
-        <part>Test</part>
-        <subpart>A</subpart>
+        <group>Test</group>
+        <subgroup>2</subgroup>
     </word>
     <word>
         <origin>four</origin>
         <translation>cztery</translation>
-        <part>Test</part>
-        <subpart>A</subpart>
+        <group>Test</group>
+        <subgroup>3</subgroup>
     </word>
 </words>
