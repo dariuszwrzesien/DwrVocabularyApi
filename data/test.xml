@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<words>
+    <word>
+        <origin>one</origin>
+        <translation>jeden</translation>
+        <part>Test</part>
+        <subpart>A</subpart>
+    </word>
+    <word>
+        <origin>two</origin>
+        <translation>dwa</translation>
+        <part>Test</part>
+        <subpart>A</subpart>
+    </word>
+    <word>
+        <origin>three</origin>
+        <translation>trzy</translation>
+        <part>Test</part>
+        <subpart>A</subpart>
+    </word>
+    <word>
+        <origin>four</origin>
+        <translation>cztery</translation>
+        <part>Test</part>
+        <subpart>A</subpart>
+    </word>
+</words>
