@@ -35,13 +35,13 @@ class Word
      */
     private $translation;
 
-    /**
-     * @var Category
-     *
-     * @ORM\ManyToOne(targetEntity="Category")
-     * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
-     */
-    private $category;
+//    /**
+//     * @var Category
+//     *
+//     * @ORM\ManyToOne(targetEntity="Category")
+//     * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
+//     */
+//    private $category;
 
 
     /**
@@ -102,28 +102,28 @@ class Word
         return $this->translation;
     }
 
-    /**
-     * Set category
-     *
-     * @param string $category
-     *
-     * @return Word
-     */
-    public function setCategory($category)
-    {
-        $this->category = $category;
-
-        return $this;
-    }
-
-    /**
-     * Get category
-     *
-     * @return string
-     */
-    public function getCategory()
-    {
-        return $this->category;
-    }
+//    /**
+//     * Set category
+//     *
+//     * @param string $category
+//     *
+//     * @return Word
+//     */
+//    public function setCategory($category)
+//    {
+//        $this->category = $category;
+//
+//        return $this;
+//    }
+//
+//    /**
+//     * Get category
+//     *
+//     * @return string
+//     */
+//    public function getCategory()
+//    {
+//        return $this->category;
+//    }
 }
 

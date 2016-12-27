@@ -4,32 +4,24 @@ namespace AppBundle\Repository\Doctrine;
 
 use AppBundle\Entity\Category;
 use AppBundle\Repository\CategoryRepositoryInterface;
-use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityRepository;
 
-class CategoryRepository implements CategoryRepositoryInterface
+class CategoryRepository extends EntityRepository implements CategoryRepositoryInterface
 {
-    /**
-     * @var EntityManager
-     */
-    private $entityManager;
-
-    /**
-     * WordRepository constructor.
-     * @param EntityManager $entityManager
-     */
-    public function __construct(EntityManager $entityManager)
-    {
-        $this->entityManager = $entityManager;
-    }
-
     /**
      * Gets category by name
      * @param string $categoryName
      * @return Category
      */
-    public function getByName(string $categoryName) : Category
+    public function getByName(string $categoryName)
     {
-        return $this->entityManager->getRepository(Category::class)
+        return $this->_em->getRepository(Category::class)
             ->findOneBy(['name' => $categoryName]);
+    }
+
+    public function create(Category $category)
+    {
+        $p = $this->_em->persist($category);
+        $d = $this->_em->flush();
     }
 }

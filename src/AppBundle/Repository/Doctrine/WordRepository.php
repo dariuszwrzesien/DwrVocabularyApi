@@ -2,23 +2,10 @@
 
 namespace AppBundle\Repository\Doctrine;
 
-use AppBundle\Entity\Word;
 use AppBundle\Repository\WordRepositoryInterface;
-use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityRepository;
 
-class WordRepository implements WordRepositoryInterface
+class WordRepository extends EntityRepository implements WordRepositoryInterface
 {
-    /**
-     * @var EntityManager
-     */
-    private $entityManager;
 
-    /**
-     * WordRepository constructor.
-     * @param EntityManager $entityManager
-     */
-    public function __construct(EntityManager $entityManager)
-    {
-        $this->entityManager = $entityManager;
-    }
 }
