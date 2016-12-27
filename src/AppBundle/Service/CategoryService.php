@@ -2,6 +2,7 @@
 
 namespace AppBundle\Service;
 
+use AppBundle\Entity\Category;
 use Doctrine\Bundle\DoctrineBundle\Registry;
 
 class CategoryService
@@ -19,12 +20,12 @@ class CategoryService
     }
 
     /**
-     * @param string $category
+     * @param string $categoryName
      * @return bool
      */
-    public function isCategory(string $category) : bool
+    public function isCategory(string $categoryName) : bool
     {
-        $repository = $this->registry->getRepository('AppBundle\Entity\Category');
-        return ($repository->findOneBy(['name' => $category])) ? true : false;
+        $categoryRepository = $this->registry->getRepository(Category::class);
+        return ($categoryRepository->getByName($categoryName)) ? true : false;
     }
 }

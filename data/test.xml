@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <words>
+    <category>Test</category>
     <word>
         <origin>one</origin>
         <translation>jeden</translation>
-        <group>Test</group>
-        <subgroup>1</subgroup>
+        <subcategory>1</subcategory>
     </word>
     <word>
         <origin>two</origin>
         <translation>dwa</translation>
-        <group>Test</group>
-        <subgroup>1</subgroup>
+        <subcategory>1</subcategory>
     </word>
     <word>
         <origin>three</origin>
         <translation>trzy</translation>
-        <group>Test</group>
-        <subgroup>2</subgroup>
+        <subcategory>2</subcategory>
     </word>
     <word>
         <origin>four</origin>
         <translation>cztery</translation>
-        <group>Test</group>
-        <subgroup>3</subgroup>
+        <subcategory>3</subcategory>
     </word>
 </words>

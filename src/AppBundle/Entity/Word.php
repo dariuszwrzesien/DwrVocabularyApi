@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Word
  *
  * @ORM\Table(name="word")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\WordRepository")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\Doctrine\WordRepository")
  */
 class Word
 {
